@@ -1,0 +1,89 @@
+.tournament-calendar {
+    text-align: center;
+
+    position: relative; /* Positionierung erforderlich */
+    overflow: hidden; /* Verhindert, dass der Kalender über die Container-Grenzen hinausragt */
+
+}
+
+.react-calendar {
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* Setze die Schriftfarbe für den gesamten Kalender */
+.custom-calendar {
+    color: black; /* Standard-Schriftfarbe für alle Texte im Kalender */
+}
+
+/* Optional: Passe die Schriftfarbe für spezifische Elemente an */
+.react-calendar__tile {
+    color: black; /* Schriftfarbe für die einzelnen Tageskacheln */
+}
+
+.react-calendar__navigation button {
+    color: black; /* Schriftfarbe für die Navigations-Buttons */
+}
+
+.react-calendar__month-view__days__day {
+    color: black; /* Schriftfarbe für die Tagesnummern */
+}
+
+.calendar-event {
+    color: black; /* Schriftfarbe für die Turnier-Events */
+}
+
+
+.react-calendar__tile--now {
+    background-color: rgba(60, 117, 255, 0.49); /* Hintergrundfarbe für den heutigen Tag */
+    border-radius: 5px;
+}
+
+
+.react-calendar__tile {
+    display: flex;
+    flex-direction: column; /* Vertikale Anordnung */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    justify-content: flex-start; /* Platz für den Inhalt nach oben */
+    width: 40px; /* Breite anpassen */
+    height: 100px; /* Höhe anpassen */
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    overflow: hidden; /* Verhindert Überlappungen */
+}
+
+.date-number {
+    font-size: 1.2rem; /* Schriftgröße für das Datum */
+    font-weight: bold;
+    margin-bottom: 5px; /* Abstand zum Event */
+}
+
+.calendar-events {
+    display: flex;
+    flex-direction: column; /* Stellt die Events untereinander */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    gap: 2px; /* Minimale Lücke zwischen den Events */
+    overflow: hidden; /* Verhindert, dass der Text über den Container hinausragt */
+}
+
+.calendar-event {
+    color: black; /* Schriftfarbe für den Event */
+    font-size: 0.8rem; /* Kleinere Schriftgröße für den Event */
+    padding: 5px 8px;
+    background-color: rgba(60, 117, 255, 0.49); /* Hintergrundfarbe für den Event */
+    text-align: center; /* Zentriert den Text */
+}
+
+
+

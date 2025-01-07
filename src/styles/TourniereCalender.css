@@ -1,0 +1,69 @@
+/* Grundlegende Stile für die Turnierseite */
+.tournament-details {
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding-right: 25px;
+}
+
+.tournament-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tournament-details p strong {
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: rgba(60, 117, 255, 0.49);
+    border: 2px solid rgba(60, 117, 255, 0.49);
+    border-radius: 8px;
+
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgba(60, 117, 255, 0.49);
+    color: white;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Zusätzliche Stile für responsives Design */
+@media (max-width: 768px) {
+    .tournament-details {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
